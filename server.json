@@ -3,7 +3,7 @@
   "name": "net.sarmate.studio/prestashop-connector",
   "title": "PrestaShop MCP Connector",
   "description": "Query a PrestaShop store from an AI assistant: orders, invoices, unpaid orders, customers, stock.",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "websiteUrl": "https://www.studio.sarmate.net/mcp/essai/",
   "remotes": [
     {
