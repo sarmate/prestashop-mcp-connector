@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "net.sarmate.studio/prestashop-connector",
+  "title": "PrestaShop MCP Connector",
+  "description": "Query a PrestaShop store from an AI assistant: orders, invoices, unpaid orders, customers, stock.",
+  "version": "1.4.1",
+  "websiteUrl": "https://www.studio.sarmate.net/mcp/essai/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{store_domain}/module/studiomcp/endpoint",
+      "variables": {
+        "store_domain": {
+          "description": "Your PrestaShop store domain, with the connector module installed (e.g. shop.example.com)",
+          "isRequired": true
+        }
+      },
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <token>, created in the module settings",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
